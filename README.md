@@ -8,7 +8,7 @@
 
     <style>
         body {
-            font-family: 'poppins', sans-serif;
+            font-family: 'Poppins', sans-serif;
             margin: 0;
         }
         .navbar {
@@ -217,14 +217,12 @@
         }
 
         .footer-container {
-            
             color: black;
             margin-top: 0%;
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
-            
-            max-width:max-content;
+            max-width: max-content;
             margin: 0 auto;
             text-align: left; 
             font-family: 'Times New Roman', Times, serif;
@@ -243,7 +241,6 @@
             margin-left: 0%;
             width: 150px;
             height: 70px;
-            
         }
 
         .icon-text {
@@ -341,193 +338,109 @@
         }
 
         .footerlogo {
-            width: 25px;
-            margin-top: 30px;
+            border-radius: 8%;
+            height: 78px;
+            width: 160px;
+            margin-top: 5%;
+            padding: auto;
         }
-
-        .partnerLogo {
-            width: 250px;
-        }
-        .productDetails{
-            margin-left: 0px;
-            margin-right: 0px;
-            display: flex;
-            justify-content: space-around;
-            align-items: stretch;
-            gap: 0px;
-        }
-
-        .listProduct {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    padding: 20px;
-}
-
-.listProduct .item {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-}
-
-.listProduct .item img {
-    width: 100%; /* Ensure images fill their containers */
-    max-width: 100%; /* Prevent images from exceeding their container width */
-    border-radius: 10px;
-    margin-bottom: 15px;
-}
-
-.listProduct .item h2 {
-    font-weight: 500;
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-.listProduct .item .price {
-    font-size: 16px;
-    color: #666666;
-}
-
-.listProduct .item:hover {
-    transform: translateY(-5px); /* Add hover effect */
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-
-.productcontainer {
-    text-align: center; /* Center align content within the product container */
-}
-
-.product-name {
-    margin-bottom: 20px; /* Adjust spacing as needed */
-}
-
-.product-name h4 {
-    font-weight: bold;
-    font-size: 24px; /* Adjust font size as needed */
-    color: #000000; /* Black color for the text */
-}
-
-
-        
     </style>
 </head>
 <body>
     <div class="navbar">
-        <div class="icon">
-            <img src="images/octinsLogo.png" class="logo" alt="Main Logo">
-        </div>
+        <a href="home.html"><img src="images/logo.png" alt="Logo" class="logo"></a>
         <div class="menu">
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
                 <li class="dropdown">
-                    <a href="#">About</a>
-                    <ul class="dropdown-content">
-                        <li><a href="ourCompany.html">Our Company</a></li>
-                        <li><a href="vision.html">Vision</a></li>
-                        <li><a href="passion.html">Passion</a></li>
-                        <li><a href="ourJourney.html">Our Journey</a></li>
+                    <a href="javascript:void(0)">More</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
                     </ul>
                 </li>
-                <li><a href="product.html">Products</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contactUs.html">Contact Us</a></li>
             </ul>
         </div>
     </div>
-
-   
-        <div class="productcontainer">
+    <div class="productcontainer">
+        <div class="title">
             <header>
-                <div class="title">PRODUCTS LIST</div>
-            </header>
-            <div class="productcontainer">
-                <header>
-                    <div class="title">PRODUCTS LIST</div>
-                </header>
-                <div class="listProduct">
-                    <div class="product-name">
-                        <h4>Product name</h4>
-                    </div>
-                    <div class="item">
-                        <img src="images/batteryOperatedUlt.PNG" alt="Product 1">
-                    </div>
-                    <div class="item">
-                        <img src="images/batteryOperatedUlt.PNG" alt="Product 2">
-                    </div>
-                    <div class="item">
-                        <img src="images/batteryOperatedUlt.PNG" alt="Product 3">
-                    </div>
-                    <div class="item">
-                        <img src="images/batteryOperatedUlt.PNG" alt="Product 4">
-                    </div>
+                <h1>Products</h1>
+                <div class="icon-cart">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black">
+                        <path d="M10 18a2 2 0 100 4 2 2 0 000-4zM18 18a2 2 0 100 4 2 2 0 000-4zM6.217 4l.996 2h13.538l-2.146 7H8.145l-.496 2h9.17a1 1 0 110 2H6.217a1 1 0 01-.97-1.243l1.96-7L4 4H2a1 1 0 110-2h3.217a1 1 0 01.97.757z"/>
+                    </svg>
+                    <span>3</span>
                 </div>
-            </div>
-            
+            </header>
         </div>
-        
-        
+        <div class="listProduct">
+            <div class="item">
+                <img src="images/product1.png" alt="Product Image">
+                <h2 class="product-name">Milk Cream</h2>
+                <p class="price">₹50</p>
+            </div>
+            <div class="item">
+                <img src="images/product2.png" alt="Product Image">
+                <h2 class="product-name">Milk Bread</h2>
+                <p class="price">₹30</p>
+            </div>
+            <div class="item">
+                <img src="images/product3.png" alt="Product Image">
+                <h2 class="product-name">Bun</h2>
+                <p class="price">₹25</p>
+            </div>
+        </div>
     </div>
-    
     <footer>
-        
         <div class="footer-container">
             <div class="footer-column">
-                <div class="icon-text">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <h4>USA</h4>
+                <img src="images/footerlogo.png" alt="Logo" class="footerlogo">
+                <div class="companyAddress">
+                    <h3>Our Address</h3>
+                    <p>123 Main Street,<br> Cityville, ST 12345</p>
                 </div>
-                <p class="companyAddress">
-                    Octothorp Integrated Solutions, LLC<br>
-                    9060 Brockhamway<br>
-                    Alpharetta<br>
-                    Georgia<br>
-                    30022<br>
-                    <a href="mailto:contact@octothorp.com" class="email-link">contact@octothorp.com</a>
-                </p>
-                
             </div>
             <div class="footer-column">
-                <!--<h3>Partners</h3>*
-                <img src="images/partnerLogo.png" class="partnerLogo" alt="Partner Logo">-->
                 <div class="icon-text">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <h4>INDIA</h4>
+                    <i class="fas fa-phone-alt"></i>
+                    <h4>Phone</h4>
                 </div>
-                <p class="companyAddress">
-                    Octothorp Integrated Solutions<br>
-                    1st Floor, Dhwarco Ministar,<br>
-                    Plot No 12C/1, 3rd Cross Street,<br>
-                    South Phase Industrial Estate,<br>
-                    Guindy, Chennai, TN-600032<br>
-                    <a href="mailto:Indsales@octins.com" class="email-link">Indsales@octins.com</a>
-                </p>
+                <p><a href="tel:+1234567890" class="email-link">+1 (234) 567-890</a></p>
+                <div class="icon-text">
+                    <i class="fas fa-envelope"></i>
+                    <h4>Email</h4>
+                </div>
+                <p><a href="mailto:info@company.com" class="email-link">info@company.com</a></p>
             </div>
             <div class="footer-column">
                 <h3>Quick Links</h3>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="ourCompany.html">About Us</a></li>
-                    <li><a href="product.html">Products</a></li>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
                     <li><a href="services.html">Services</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
             <div class="footer-column">
-                <h3>Contact Us</h3>
-                <p>+91 9789063630</p>
-                <p><a href="mailto:Indsales@octins.com" class="email-link">Indsales@octins.com</a></p>
+                <h3>Follow Us</h3>
                 <div class="social-icons">
-                    <a href="#" aria-label="Facebook"><img src="images/facebookLogo.png" class="footerlogo" alt="Facebook"></a>
-                    <a href="#" aria-label="Twitter"><img src="images/twitterLogo.png" class="footerlogo" alt="Twitter"></a>
-                    <a href="https://www.linkedin.com/company/octins/?originalSubdomain=in" aria-label="LinkedIn"><img src="images/linkedInLogo.png" class="footerlogo" alt="LinkedIn"></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
                 </div>
             </div>
         </div>
         <div class="footer-bottom">
-            &copy; 2024 Octothorp. All rights reserved.
+            <p>&copy; 2023 Company Name. All rights reserved.</p>
         </div>
     </footer>
 </body>
